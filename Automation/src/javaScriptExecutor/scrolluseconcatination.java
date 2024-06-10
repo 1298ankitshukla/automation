@@ -25,6 +25,6 @@ public static void main(String[] args) throws InterruptedException {
 		int y = rect.getY();
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("rect.getX()" + " , " + "rect.getY()");
+		js.executeScript("window.scrollBy("+x+","+y+")");
 }
 }

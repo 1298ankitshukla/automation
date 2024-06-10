@@ -1,6 +1,6 @@
 package Assignment;
 
-import java.security.Key;
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -18,7 +18,7 @@ public class Fb {
 		
 		driver.findElement(By.className("_6lti")).click();
 	
-        driver.findElement(By.name("firstname")).sendKeys("ankit",Keys.TAB,"shukla",Keys.TAB,"9987654321",Keys.TAB,"ankit9876",Keys.TAB,Keys.TAB,"12",Keys.TAB,"august",Keys.TAB,"2001",Keys.TAB,Keys.TAB,Keys.ENTER,Keys.TAB,Keys.ENTER);
+        driver.findElement(By.name("firstname")).sendKeys("ankit",Keys.TAB,"shukla",Keys.TAB,"9987654321",Keys.TAB,"ankit9876",Keys.TAB,Keys.TAB,"12",Keys.TAB,"august",Keys.TAB,"2001",Keys.TAB,Keys.ENTER,Keys.TAB,Keys.ENTER);
 //        driver.findElement(By.name("lastname")).sendKeys("shukla");
 //        driver.findElement(By.name("reg_email__")).sendKeys("9987654321");
 //        driver.findElement(By.name("reg_passwd__")).sendKeys("ankit98765");

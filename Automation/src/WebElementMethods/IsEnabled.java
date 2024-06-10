@@ -1,24 +1,27 @@
 package WebElementMethods;
 
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class clearMethod {
+public class IsEnabled {
 
 public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://laptop-eeas1cv9/login.do");
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		Thread.sleep(3000);
-		WebElement usernameTextField = driver.findElement(By.name("username"));
-		usernameTextField.sendKeys("admin");
-		usernameTextField.clear();
-		usernameTextField.sendKeys("admin123");
-		
+		//identify the username text field
+		WebElement usnTextField = driver.findElement(By.name("username"));
+		if(usnTextField.isEnabled())
+		{
+			usnTextField.sendKeys("admin");
+		}
+		else
+		{
+			System.out.println("Username text field is disabled");
+		}
 	}
 }
