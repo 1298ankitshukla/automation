@@ -15,7 +15,7 @@ public class GetRect {
 
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.get("http://laptop-eeas1cv9/login.do");
+		driver.get("http://desktop-1q5mrb2/login.do");
 		WebElement checkbox = driver.findElement(By.id("keepLoggedInCheckBox"));
 		
 		Rectangle axis = checkbox.getRect();

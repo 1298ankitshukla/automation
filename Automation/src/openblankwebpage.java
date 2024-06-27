@@ -9,6 +9,8 @@ public class openblankwebpage {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.get("");
+		driver.get("https://www.google.com");
+		
+	
 	}
 }

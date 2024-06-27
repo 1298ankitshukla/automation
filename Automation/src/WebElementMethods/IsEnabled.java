@@ -18,6 +18,7 @@ public static void main(String[] args) throws InterruptedException {
 		if(usnTextField.isEnabled())
 		{
 			usnTextField.sendKeys("admin");
+			System.out.println("Username TextField is enable");
 		}
 		else
 		{

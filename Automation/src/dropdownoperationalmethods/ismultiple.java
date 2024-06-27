@@ -21,6 +21,7 @@ public static void main(String[] args) {
 		//identify the static dropdown
 		WebElement dropdown = driver.findElement(By.id("select-multiple-native"));
 		
+		
 		//creat the object of select class 
 		Select s = new Select(dropdown);
 		

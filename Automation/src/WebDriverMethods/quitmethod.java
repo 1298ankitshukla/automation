@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class quitmethod {
-		public static void main(String[] args) {
+		public static void main(String[] args) throws InterruptedException {
 		
 		
 		WebDriver driver = new ChromeDriver();
@@ -16,7 +16,7 @@ public class quitmethod {
 		driver.findElement(By.linkText("open a popup window")).click();
 		
 		//driver.close();
-		
+		Thread.sleep(2000);
 		// to use quit method
 		driver.quit();
 		}
