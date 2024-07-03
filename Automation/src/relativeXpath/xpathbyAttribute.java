@@ -15,6 +15,7 @@ public class xpathbyAttribute {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://www.instagram.com/");
 		
+		// X Path By Attribute
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("ankit");
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("123456789");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
