@@ -20,6 +20,6 @@ public static void main(String[] args) throws InterruptedException {
 		// X Path By Text
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("ankit");
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("123456789");
-		driver.findElement(By.xpath("//div[text()='Log in']")).click();
+		driver.findElement(By.xpath("//div[text()='Log in']")).click();                  // X Path By Text
 	}
 }

@@ -16,10 +16,10 @@ public static void main(String[] args) throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://www.dream11.com/");
 		
-		WebElement freame1 = driver.findElement(By.xpath("//iframe[@class='send-sms-iframe']"));
+		WebElement frame1 = driver.findElement(By.xpath("//iframe[@class='send-sms-iframe']"));
 		
 		//identify frames and use web element
-		driver.switchTo().frame(freame1);
+		driver.switchTo().frame(frame1);
 		 driver.findElement(By.xpath("//input[@name='regEmail']")).sendKeys("9140068922");
 }
 }

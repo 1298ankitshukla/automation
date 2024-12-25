@@ -17,8 +17,9 @@ public static void main(String[] args) throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://www.facebook.com/r.php");
 		
+		driver.findElement(By.xpath("//label[text()='Custom']")).click();
 		WebElement hiddenWebelement = driver.findElement(By.xpath("//input[@name='custom_gender']"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("argument[0].value='Transgender'",hiddenWebelement);
+		js.executeScript("arguments[0].value='Transgender'", hiddenWebelement);
 }
 }

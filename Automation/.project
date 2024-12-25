@@ -3,6 +3,7 @@
 	<name>Automation</name>
 	<comment></comment>
 	<projects>
+		<project>zPracticeAutomation</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
